@@ -18,7 +18,6 @@ local Window = Rayfield:CreateWindow({
 		Key = "SubToLynoConfigs"
 	}
 })
-Rayfield:LoadConfiguration()
 Rayfield:Notify("Lyno Notify", "Thanks For Choosing Lyno !", 4483362458) -- Notfication -- Title, Content, Image
 Rayfield:Notify("Lyno Workspace loader", "Dected File - LynoPrivV1", 4483362458)
 Rayfield:Notify("Lyno Private", "Private Config Loaded,Auto Save is Opened !", 4483362458)
@@ -91,7 +90,7 @@ local Button = Tab:CreateButton({
 		Rayfield:Destroy()
 	end,
 })
-
+Rayfield:LoadConfiguration()
 -- Extras
 
 -- getgenv().SecureMode = true -- Only Set To True If Games Are Detecting/Crashing The UI
